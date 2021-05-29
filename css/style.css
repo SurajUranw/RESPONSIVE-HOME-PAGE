@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+url('../images/banar1.jpg'); 
+
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix:after{
+content: ".";
+visibility: hidden;
+display: block;
+height: 0px;
+clear: both;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+
+.main-nav{
+float: right;
+margin-top: 60px;
+}
+
+.main-nav li{
+display: inline-block;
+list-style: none;
+margin-left: 50px;
+}
+
+.main-nav li a{
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 90%;
+font-weight: 100;
+padding: 5px 0;
+}
+
+.main-nav li a:hover{
+border-bottom: 2px solid #fd6c29;
+
+}
+
+
+.main-content-header{
+width: 1180px;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+h1{
+color:#fff;
+font-size: 240%;
+word-spacing: 5px;
+letter-spacing: 3px;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-weight: lighter;
+}
+
+
+.btn{
+display: inline-block;
+padding: 10px 30px;
+font-weight: lighter;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 200px;
+transition:  background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.btn-full{
+background-color: transparent;
+color:darkorange;
+margin-right: 15px;
+border: 1px solid darkorange ;
+}
+
+.btn-full:hover{
+background-color:snow;
+}
+
+.btn-nav{
+background-color: transparent;
+color: #fff;
+border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+    background-color: thistle;
+}
+
+
+.colorchange{
+    animation: animBizbale 1s infinite;
+}
+
+@keyframes animBizbale{
+0%{color: yellow;}
+25%{color:violet;}
+50%{color:orangered}
+100%{color:lightslategray}
+}
+
+
+/* Code For Responsive Queries */
+
+@media only screen and (max-width: 1180px){
+.main-content-header{
+    width: 100%;
+    padding: 0 2%;
+}
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+
+.mobile-icon{display: none;}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+
+    .main-nav{display: none;}
+
+    .mobile-icon{
+        display: inline-block;
+        color:tomato;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav{float: left;}
+
+    .main-nav li{
+      display: block;
+      margin-top: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%;}  
+}
+
+
+
+
+
